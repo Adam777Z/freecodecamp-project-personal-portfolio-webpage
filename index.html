@@ -6,8 +6,7 @@
   <title>Adam's Portfolio web page</title>
   
   
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css'>
 
       <link rel="stylesheet" href="css/style.css">
 
@@ -17,112 +16,257 @@
 <body>
 
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-<nav id="navbar" class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Adam's Portfolio web page</a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="bs-navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#about">About Me <span class="sr-only">(current)</span></a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+	<div class="container">
+		<a class="navbar-brand" href="#">Adam's Portfolio web page</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="nav nav-pills">
+				<li class="nav-item">
+					<a class="nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#portfolio">Portfolio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 </nav>
 
 <div id="about" class="container">
-  <div id="welcome-section" class="jumbotron">
-    <div class="text-middle">
-      <h1 class="text-title text-center mt-0">About Me</h1>
-      <p>Experienced Web Developer with a demonstrated history of working in the information technology and services industry. Skilled in PHP, CodeIgniter, HTML, CSS, JavaScript, jQuery, and WordPress.</p>
-    </div>
-  </div>
+	<div id="welcome-section" class="jumbotron">
+		<div class="text-middle">
+			<h1 class="text-title text-center">About Me</h1>
+			<p>Experienced Web Developer with a demonstrated history of working in the information technology and services industry. Skilled in PHP, CodeIgniter, HTML, CSS, JavaScript, jQuery, and WordPress.</p>
+		</div>
+	</div>
 </div>
 
 <div id="portfolio" class="container">
-  <div id="projects" class="jumbotron">
-    <h2 class="text-center mt-0">Portfolio</h2>
-    <div class="row">
-			<div class="col-md-4 project-tile">
-			</div>
-			<div class="col-md-4 project-tile">
-				<a class="text-center center-block" href="https://codepen.io/Adam111/full/rzJjgb/" target="_blank">
-					<h3 class="project-title mt-0 mb-5px">Wikipedia Viewer</h3>
-					<img class="portfolio-screenshot wikipedia-viewer-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Wikipedia Viewer Screenshot">
+	<div id="projects" class="jumbotron">
+		<h2 class="text-center">Portfolio</h2>
+		<div class="row">
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://codepen.io/Adam111/full/WEwqZg" target="_blank">
+					<h4 class="project-title mb-1">Tribute Page to Nikola Tesla</h4>
+					<img class="mx-auto d-block portfolio-screenshot tribute-page-to-nikola-tesla-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Tribute Page to Nikola Tesla Screenshot">
 				</a>
 			</div>
-			<div class="col-md-4 project-tile">
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://codepen.io/Adam111/full/RqNWZb" target="_blank">
+					<h4 class="project-title mb-1">Survey Form</h4>
+					<img class="mx-auto d-block portfolio-screenshot survey-form-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Survey Form Screenshot">
+				</a>
+			</div>
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://codepen.io/Adam111/full/dQoXVQ" target="_blank">
+					<h4 class="project-title mb-1">Product Landing Page</h4>
+					<img class="mx-auto d-block portfolio-screenshot product-landing-page-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Product Landing Page Screenshot">
+				</a>
 			</div>
 		</div>
-    <div class="row">
-      <div class="col-md-4 project-tile">
-        <a class="text-center center-block" href="https://codepen.io/Adam111/full/EvvVrX/" target="_blank">
-          <h3 class="project-title mt-0 mb-5px">Local Weather</h3>
-          <img class="portfolio-screenshot local-weather-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Local Weather Screenshot">
-        </a>
-      </div>
-      <div class="col-md-4 project-tile">
-        <a class="text-center center-block" href="https://codepen.io/Adam111/full/VzWYqL/" target="_blank">
-          <h3 class="project-title mt-0 mb-5px">Random Quote Machine</h3>
-          <img class="portfolio-screenshot random-quote-machine-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Random Quote Machine Screenshot">
-        </a>
-      </div>
-      <div class="col-md-4 project-tile">
-        <a class="text-center center-block" href="https://codepen.io/Adam111/full/WEwqZg/" target="_blank">
-          <h3 class="project-title mt-0 mb-5px">Tribute Page to Nikola Tesla</h3>
-          <img class="portfolio-screenshot tribute-page-to-nikola-tesla-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Tribute Page to Nikola Tesla Screenshot">
-        </a>
-      </div>
-    </div>
-  </div>
+		<div class="row">
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://codepen.io/Adam111/full/zMKRLL" target="_blank">
+					<h4 class="project-title mb-1">Technical Documentation Page</h4>
+					<img class="mx-auto d-block portfolio-screenshot technical-documentation-page-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Technical Documentation Page Screenshot">
+				</a>
+			</div>
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://codepen.io/Adam111/full/VzWYqL" target="_blank">
+					<h4 class="project-title mb-1">Random Quote Machine</h4>
+					<img class="mx-auto d-block portfolio-screenshot random-quote-machine-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Random Quote Machine Screenshot">
+				</a>
+			</div>
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://codepen.io/Adam111/full/gQzQMV" target="_blank">
+					<h4 class="project-title mb-1">Markdown Previewer</h4>
+					<img class="mx-auto d-block portfolio-screenshot markdown-previewer-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Markdown Previewer Screenshot">
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://codepen.io/Adam111/full/KreVzQ" target="_blank">
+					<h4 class="project-title mb-1">Drum Machine</h4>
+					<img class="mx-auto d-block portfolio-screenshot drum-machine-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Drum Machine Screenshot">
+				</a>
+			</div>
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://codepen.io/Adam111/full/xQzgbP" target="_blank">
+					<h4 class="project-title mb-1">Calculator</h4>
+					<img class="mx-auto d-block portfolio-screenshot calculator-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Calculator Screenshot">
+				</a>
+			</div>
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://codepen.io/Adam111/full/gQjgKN" target="_blank">
+					<h4 class="project-title mb-1">Pomodoro Clock</h4>
+					<img class="mx-auto d-block portfolio-screenshot pomodoro-clock-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Pomodoro Clock Screenshot">
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://codepen.io/Adam111/full/mQQxYL" target="_blank">
+					<h4 class="project-title mb-1">Bar Chart</h4>
+					<img class="mx-auto d-block portfolio-screenshot bar-chart-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Bar Chart Screenshot">
+				</a>
+			</div>
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://codepen.io/Adam111/full/GwPPvB" target="_blank">
+					<h4 class="project-title mb-1">Scatterplot Graph</h4>
+					<img class="mx-auto d-block portfolio-screenshot scatterplot-graph-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Scatterplot Graph Screenshot">
+				</a>
+			</div>
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://codepen.io/Adam111/full/YRBQdp" target="_blank">
+					<h4 class="project-title mb-1">Heat Map</h4>
+					<img class="mx-auto d-block portfolio-screenshot heat-map-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Heat Map Screenshot">
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://codepen.io/Adam111/full/GwzVwB" target="_blank">
+					<h4 class="project-title mb-1">Choropleth Map</h4>
+					<img class="mx-auto d-block portfolio-screenshot choropleth-map-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Choropleth Map Screenshot">
+				</a>
+			</div>
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://codepen.io/Adam111/full/KrErJo" target="_blank">
+					<h4 class="project-title mb-1">Treemap Diagram</h4>
+					<img class="mx-auto d-block portfolio-screenshot treemap-diagram-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Treemap Diagram Screenshot">
+				</a>
+			</div>
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://fallacious-passenger.glitch.me" target="_blank">
+					<h4 class="project-title mb-1">Timestamp Microservice</h4>
+					<img class="mx-auto d-block portfolio-screenshot timestamp-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Timestamp Microservice Screenshot">
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://accidental-okra.glitch.me" target="_blank">
+					<h4 class="project-title mb-1">Request Header Parser Microservice</h4>
+					<img class="mx-auto d-block portfolio-screenshot request-header-parser-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Request Header Parser Microservice Screenshot">
+				</a>
+			</div>
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://pollen-nation.glitch.me" target="_blank">
+					<h4 class="project-title mb-1">URL Shortener Microservice</h4>
+					<img class="mx-auto d-block portfolio-screenshot url-shortener-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="URL Shortener Microservice Screenshot">
+				</a>
+			</div>
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://lackadaisical-cousin.glitch.me" target="_blank">
+					<h4 class="project-title mb-1">Exercise Tracker</h4>
+					<img class="mx-auto d-block portfolio-screenshot exercise-tracker-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Exercise Tracker Screenshot">
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://quixotic-custard.glitch.me" target="_blank">
+					<h4 class="project-title mb-1">File Metadata Microservice</h4>
+					<img class="mx-auto d-block portfolio-screenshot file-metadata-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="File Metadata Microservice Screenshot">
+				</a>
+			</div>
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://wide-closet.glitch.me" target="_blank">
+					<h4 class="project-title mb-1">Metric-Imperial Converter</h4>
+					<img class="mx-auto d-block portfolio-screenshot metric-imperial-converter-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Metric-Imperial Converter Screenshot">
+				</a>
+			</div>
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://imported-damselfly.glitch.me" target="_blank">
+					<h4 class="project-title mb-1">Issue Tracker</h4>
+					<img class="mx-auto d-block portfolio-screenshot issue-tracker-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Issue Tracker Screenshot">
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://giant-ink.glitch.me" target="_blank">
+					<h4 class="project-title mb-1">Personal Library</h4>
+					<img class="mx-auto d-block portfolio-screenshot library-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Personal Library Screenshot">
+				</a>
+			</div>
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://illustrious-snowman.glitch.me" target="_blank">
+					<h4 class="project-title mb-1">Stock Price Checker</h4>
+					<img class="mx-auto d-block portfolio-screenshot stock-checker-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Stock Price Checker Screenshot">
+				</a>
+			</div>
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://sugar-peripheral.glitch.me" target="_blank">
+					<h4 class="project-title mb-1">Anonymous Message Board</h4>
+					<img class="mx-auto d-block portfolio-screenshot message-board-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Anonymous Message Board Screenshot">
+				</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://codepen.io/Adam111/full/EvvVrX" target="_blank">
+					<h4 class="project-title mb-1">Local Weather</h4>
+					<img class="mx-auto d-block portfolio-screenshot local-weather-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Local Weather Screenshot">
+				</a>
+			</div>
+			<div class="col-4 project-tile">
+				<a class="text-center" href="https://codepen.io/Adam111/full/rzJjgb" target="_blank">
+					<h4 class="project-title mb-1">Wikipedia Viewer</h4>
+					<img class="mx-auto d-block portfolio-screenshot wikipedia-viewer-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Wikipedia Viewer Screenshot">
+				</a>
+			</div>
+			<div class="col-4 project-tile">
+			</div>
+		</div>
+	</div>
 </div>
 
 <div id="contact" class="container">
-  <div class="jumbotron">
-    <h2 class="text-center mt-0">Contact</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <form action="#" method="post">
-          <div class="form-group mb-10px">
-            <input type="text" class="form-control" name="Name" placeholder="Your Name" required>
-          </div>
-          <div class="form-group mb-10px">
-            <input type="email" class="form-control" name="Email" placeholder="Your Email address" required>
-          </div>
-          <div class="form-group mb-10px">
-            <textarea class="form-control" rows="3" name="Message" placeholder="Your Message" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-default" disabled>Send</button>
-        </form>
-        <h4>This form is currently non-functional. Please use another method to contact me.</h4>
-      </div>
-      <div class="col-md-6">
-        <p><s>You can use the form on the left to send me a message. I try to reply as soon as possible.</s></p>
-        <p>You can also have a look at my profile on other sites.</p>
-        <a class="social-button" href="https://www.linkedin.com/in/adam-papp/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin fa-3x"></i></a>
-        <a class="social-button" href="https://github.com/Adam111" target="_blank" title="GitHub"><i class="fa fa-github fa-3x"></i></a>
-        <a id="profile-link" class="social-button" href="https://www.freecodecamp.org/adam111" target="_blank" title="freeCodeCamp"><i class="fa fa-free-code-camp fa-3x"></i></a>
-      </div>
-    </div>
-  </div>
+	<div class="jumbotron">
+		<h2 class="text-center">Contact</h2>
+		<div class="row">
+			<div class="col">
+				<form action="#" method="post">
+					<div class="form-group mb-2">
+						<input type="text" class="form-control" name="Name" placeholder="Your name" required>
+					</div>
+					<div class="form-group mb-2">
+						<input type="email" class="form-control" name="Email" placeholder="Your email address" required>
+					</div>
+					<div class="form-group mb-2">
+						<textarea class="form-control" rows="3" name="Message" placeholder="Your message" required></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary mx-auto d-block" disabled>Send</button>
+				</form>
+				<p>This form is currently non-functional. Please use another method to contact me.</p>
+			</div>
+			<div class="col">
+				<p><s>You can use the form on the left to send me a message. I try to reply as soon as possible.</s></p>
+				<p>You can also have a look at my profile on other sites.</p>
+				<a class="social-button" href="https://www.linkedin.com/in/adam-papp/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin fa-3x"></i></a>
+				<a class="social-button" href="https://github.com/Adam111" target="_blank" title="GitHub"><i class="fab fa-github fa-3x"></i></a>
+				<a id="profile-link" class="social-button" href="https://www.freecodecamp.org/adam111" target="_blank" title="freeCodeCamp"><i class="fab fa-free-code-camp fa-3x"></i></a>
+			</div>
+		</div>
+	</div>
 </div>
 
-<footer class="footer">
-  <div class="container">
-    <h5 class="text-muted text-center">Made by Adam</h5>
-  </div>
+<footer class="footer mt-auto py-3 bg-light">
+	<div class="container text-center">
+		<span class="text-muted">Made by Adam</span>
+	</div>
 </footer>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js'></script>
+<script src='https://use.fontawesome.com/releases/v5.6.3/js/all.js'></script>
 
   
 
