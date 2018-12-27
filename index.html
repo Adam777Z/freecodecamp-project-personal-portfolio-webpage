@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Adam's Portfolio web page</title>
+  
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Adam's Portfolio web page</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#about">About Me <span class="sr-only">(current)</span></a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="about" class="container">
+  <div id="welcome-section" class="jumbotron">
+    <div class="text-middle">
+      <h1 class="text-title text-center mt-0">About Me</h1>
+      <p>Experienced Web Developer with a demonstrated history of working in the information technology and services industry. Skilled in PHP, CodeIgniter, HTML, CSS, JavaScript, jQuery, and WordPress.</p>
+    </div>
+  </div>
+</div>
+
+<div id="portfolio" class="container">
+  <div id="projects" class="jumbotron">
+    <h2 class="text-center mt-0">Portfolio</h2>
+    <div class="row">
+			<div class="col-md-4 project-tile">
+			</div>
+			<div class="col-md-4 project-tile">
+				<a class="text-center center-block" href="https://codepen.io/Adam111/full/rzJjgb/" target="_blank">
+					<h3 class="project-title mt-0 mb-5px">Wikipedia Viewer</h3>
+					<img class="portfolio-screenshot wikipedia-viewer-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Wikipedia Viewer Screenshot">
+				</a>
+			</div>
+			<div class="col-md-4 project-tile">
+			</div>
+		</div>
+    <div class="row">
+      <div class="col-md-4 project-tile">
+        <a class="text-center center-block" href="https://codepen.io/Adam111/full/EvvVrX/" target="_blank">
+          <h3 class="project-title mt-0 mb-5px">Local Weather</h3>
+          <img class="portfolio-screenshot local-weather-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Local Weather Screenshot">
+        </a>
+      </div>
+      <div class="col-md-4 project-tile">
+        <a class="text-center center-block" href="https://codepen.io/Adam111/full/VzWYqL/" target="_blank">
+          <h3 class="project-title mt-0 mb-5px">Random Quote Machine</h3>
+          <img class="portfolio-screenshot random-quote-machine-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Random Quote Machine Screenshot">
+        </a>
+      </div>
+      <div class="col-md-4 project-tile">
+        <a class="text-center center-block" href="https://codepen.io/Adam111/full/WEwqZg/" target="_blank">
+          <h3 class="project-title mt-0 mb-5px">Tribute Page to Nikola Tesla</h3>
+          <img class="portfolio-screenshot tribute-page-to-nikola-tesla-screenshot-thumbnail" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Tribute Page to Nikola Tesla Screenshot">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contact" class="container">
+  <div class="jumbotron">
+    <h2 class="text-center mt-0">Contact</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <form action="#" method="post">
+          <div class="form-group mb-10px">
+            <input type="text" class="form-control" name="Name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group mb-10px">
+            <input type="email" class="form-control" name="Email" placeholder="Your Email address" required>
+          </div>
+          <div class="form-group mb-10px">
+            <textarea class="form-control" rows="3" name="Message" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-default" disabled>Send</button>
+        </form>
+        <h4>This form is currently non-functional. Please use another method to contact me.</h4>
+      </div>
+      <div class="col-md-6">
+        <p><s>You can use the form on the left to send me a message. I try to reply as soon as possible.</s></p>
+        <p>You can also have a look at my profile on other sites.</p>
+        <a class="social-button" href="https://www.linkedin.com/in/adam-papp/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin fa-3x"></i></a>
+        <a class="social-button" href="https://github.com/Adam111" target="_blank" title="GitHub"><i class="fa fa-github fa-3x"></i></a>
+        <a id="profile-link" class="social-button" href="https://www.freecodecamp.org/adam111" target="_blank" title="freeCodeCamp"><i class="fa fa-free-code-camp fa-3x"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <h5 class="text-muted text-center">Made by Adam</h5>
+  </div>
+</footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
