@@ -5,7 +5,7 @@ $('body').scrollspy({
 	target: '#navbar'
 });
 
-// Smooth Scroll (disabled for the test to pass)
+// Smooth Scroll to ID (disabled for the test to pass)
 // $('a[href*="#"]').on('click', function(e) {
 // 	e.preventDefault();
 
