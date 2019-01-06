@@ -1,280 +1,266 @@
 <!DOCTYPE html>
-<html lang="en" >
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Adam's Portfolio web page</title>
-  
-  
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css'>
+	<meta charset="UTF-8">
+	<title>Adam's Portfolio web page</title>
 
-      <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
 
-  
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
+	<script src="js/index.js"></script>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
-
 <body>
+	<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+		<div class="container">
+			<a class="navbar-brand" href="#">Adam's Portfolio web page</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="nav nav-pills">
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#portfolio">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-	<div class="container">
-		<a class="navbar-brand" href="#">Adam's Portfolio web page</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="nav nav-pills">
-				<li class="nav-item">
-					<a class="nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#portfolio">Portfolio</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#contact">Contact</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</nav>
-
-<div id="about" class="container">
-	<div id="welcome-section" class="jumbotron">
-		<div class="text-middle">
-			<h1 class="text-title text-center">About Me</h1>
-			<p>Experienced Web Developer with a demonstrated history of working in the information technology and services industry. Skilled in PHP, CodeIgniter, HTML, CSS, JavaScript, jQuery, and WordPress.</p>
-		</div>
-	</div>
-</div>
-
-<div id="portfolio" class="container">
-	<div id="projects" class="jumbotron">
-		<h2 class="text-center">Portfolio</h2>
-		<div class="row mb-2">
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://codepen.io/Adam111/full/WEwqZg" target="_blank">
-					<h4 class="project-title mb-1">Tribute Page to Nikola Tesla</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/tribute-page-to-nikola-tesla/tribute-page-to-nikola-tesla-screenshot-thumbnail.png" height="287" width="300" alt="Tribute Page to Nikola Tesla Screenshot">
-				</a>
-			</div>
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://codepen.io/Adam111/full/RqNWZb" target="_blank">
-					<h4 class="project-title mb-1">Survey Form</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/survey-form/survey-form-screenshot-thumbnail.png" height="139" width="300" alt="Survey Form Screenshot">
-				</a>
-			</div>
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://codepen.io/Adam111/full/dQoXVQ" target="_blank">
-					<h4 class="project-title mb-1">Product Landing Page</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/product-landing-page/product-landing-page-screenshot-thumbnail.png" height="228" width="300" alt="Product Landing Page Screenshot">
-				</a>
-			</div>
-		</div>
-		<div class="row mb-2">
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://codepen.io/Adam111/full/zMKRLL" target="_blank">
-					<h4 class="project-title mb-1">Technical Documentation Page</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/technical-documentation-page/technical-documentation-page-screenshot-thumbnail.png" height="300" width="300" alt="Technical Documentation Page Screenshot">
-				</a>
-			</div>
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://codepen.io/Adam111/full/VzWYqL" target="_blank">
-					<h4 class="project-title mb-1">Random Quote Machine</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/random-quote-machine/random-quote-machine-screenshot-thumbnail.png" height="75" width="300" alt="Random Quote Machine Screenshot">
-				</a>
-			</div>
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://codepen.io/Adam111/full/gQzQMV" target="_blank">
-					<h4 class="project-title mb-1">Markdown Previewer</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/markdown-previewer/markdown-previewer-screenshot-thumbnail.png" height="300" width="300" alt="Markdown Previewer Screenshot">
-				</a>
-			</div>
-		</div>
-		<div class="row mb-2">
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://codepen.io/Adam111/full/KreVzQ" target="_blank">
-					<h4 class="project-title mb-1">Drum Machine</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/drum-machine/drum-machine-screenshot-thumbnail.png" height="286" width="300" alt="Drum Machine Screenshot">
-				</a>
-			</div>
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://codepen.io/Adam111/full/xQzgbP" target="_blank">
-					<h4 class="project-title mb-1">Calculator</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/calculator/calculator-screenshot-thumbnail.png" height="300" width="214" alt="Calculator Screenshot">
-				</a>
-			</div>
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://codepen.io/Adam111/full/gQjgKN" target="_blank">
-					<h4 class="project-title mb-1">Pomodoro Clock</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/pomodoro-clock/pomodoro-clock-screenshot-thumbnail.png" height="226" width="300" alt="Pomodoro Clock Screenshot">
-				</a>
-			</div>
-		</div>
-		<div class="row mb-2">
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://codepen.io/Adam111/full/mQQxYL" target="_blank">
-					<h4 class="project-title mb-1">Bar Chart</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/bar-chart/bar-chart-screenshot-thumbnail.png" height="193" width="300" alt="Bar Chart Screenshot">
-				</a>
-			</div>
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://codepen.io/Adam111/full/GwPPvB" target="_blank">
-					<h4 class="project-title mb-1">Scatterplot Graph</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/scatterplot-graph/scatterplot-graph-screenshot-thumbnail.png" height="203" width="300" alt="Scatterplot Graph Screenshot">
-				</a>
-			</div>
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://codepen.io/Adam111/full/YRBQdp" target="_blank">
-					<h4 class="project-title mb-1">Heat Map</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/heat-map/heat-map-screenshot-thumbnail.png" height="187" width="300" alt="Heat Map Screenshot">
-				</a>
-			</div>
-		</div>
-		<div class="row mb-2">
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://codepen.io/Adam111/full/GwzVwB" target="_blank">
-					<h4 class="project-title mb-1">Choropleth Map</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/choropleth-map/choropleth-map-screenshot-thumbnail.png" height="213" width="300" alt="Choropleth Map Screenshot">
-				</a>
-			</div>
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://codepen.io/Adam111/full/KrErJo" target="_blank">
-					<h4 class="project-title mb-1">Treemap Diagram</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/treemap-diagram/treemap-diagram-screenshot-thumbnail.png" height="300" width="286" alt="Treemap Diagram Screenshot">
-				</a>
-			</div>
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://fallacious-passenger.glitch.me" target="_blank">
-					<h4 class="project-title mb-1">Timestamp Microservice</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/timestamp/timestamp-screenshot-thumbnail.png" height="203" width="300" alt="Timestamp Microservice Screenshot">
-				</a>
-			</div>
-		</div>
-		<div class="row mb-2">
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://accidental-okra.glitch.me" target="_blank">
-					<h4 class="project-title mb-1">Request Header Parser Microservice</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/request-header-parser/request-header-parser-screenshot-thumbnail.png" height="122" width="300" alt="Request Header Parser Microservice Screenshot">
-				</a>
-			</div>
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://pollen-nation.glitch.me" target="_blank">
-					<h4 class="project-title mb-1">URL Shortener Microservice</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/url-shortener/url-shortener-screenshot-thumbnail.png" height="169" width="300" alt="URL Shortener Microservice Screenshot">
-				</a>
-			</div>
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://lackadaisical-cousin.glitch.me" target="_blank">
-					<h4 class="project-title mb-1">Exercise Tracker</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/exercise-tracker/exercise-tracker-screenshot-thumbnail.png" height="181" width="300" alt="Exercise Tracker Screenshot">
-				</a>
-			</div>
-		</div>
-		<div class="row mb-2">
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://quixotic-custard.glitch.me" target="_blank">
-					<h4 class="project-title mb-1">File Metadata Microservice</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/file-metadata/file-metadata-screenshot-thumbnail.png" height="144" width="300" alt="File Metadata Microservice Screenshot">
-				</a>
-			</div>
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://wide-closet.glitch.me" target="_blank">
-					<h4 class="project-title mb-1">Metric-Imperial Converter</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/metric-imperial-converter/metric-imperial-converter-screenshot-thumbnail.png" height="260" width="300" alt="Metric-Imperial Converter Screenshot">
-				</a>
-			</div>
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://imported-damselfly.glitch.me" target="_blank">
-					<h4 class="project-title mb-1">Issue Tracker</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/issue-tracker/issue-tracker-screenshot-thumbnail.png" height="300" width="233" alt="Issue Tracker Screenshot">
-				</a>
-			</div>
-		</div>
-		<div class="row mb-2">
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://giant-ink.glitch.me" target="_blank">
-					<h4 class="project-title mb-1">Personal Library</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/library/library-screenshot-thumbnail.png" height="300" width="293" alt="Personal Library Screenshot">
-				</a>
-			</div>
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://illustrious-snowman.glitch.me" target="_blank">
-					<h4 class="project-title mb-1">Stock Price Checker</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/stock-checker/stock-checker-screenshot-thumbnail.png" height="254" width="300" alt="Stock Price Checker Screenshot">
-				</a>
-			</div>
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://sugar-peripheral.glitch.me" target="_blank">
-					<h4 class="project-title mb-1">Anonymous Message Board</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/message-board/message-board-screenshot-thumbnail.png" height="300" width="185" alt="Anonymous Message Board Screenshot">
-				</a>
-			</div>
-		</div>
-		<div class="row mb-2">
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://codepen.io/Adam111/full/EvvVrX" target="_blank">
-					<h4 class="project-title mb-1">Local Weather</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/local-weather/local-weather-screenshot-thumbnail.png" height="75" width="300" alt="Local Weather Screenshot">
-				</a>
-			</div>
-			<div class="col-4 project-tile">
-				<a class="text-center" href="https://codepen.io/Adam111/full/rzJjgb" target="_blank">
-					<h4 class="project-title mb-1">Wikipedia Viewer</h4>
-					<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/wikipedia-viewer/wikipedia-viewer-screenshot-thumbnail.png" height="64" width="300" alt="Wikipedia Viewer Screenshot">
-				</a>
-			</div>
-			<div class="col-4 project-tile">
+	<div id="about" class="container">
+		<div id="welcome-section" class="jumbotron">
+			<div class="text-middle">
+				<h1 class="text-title text-center">About Me</h1>
+				<p>Experienced Web Developer with a demonstrated history of working in the information technology and services industry. Skilled in PHP, CodeIgniter, HTML, CSS, JavaScript, jQuery, and WordPress.</p>
 			</div>
 		</div>
 	</div>
-</div>
 
-<div id="contact" class="container">
-	<div class="jumbotron">
-		<h2 class="text-center">Contact</h2>
-		<div class="row">
-			<div class="col">
-				<form action="#" method="post">
-					<div class="form-group mb-2">
-						<input type="text" class="form-control" name="Name" placeholder="Your name" required>
-					</div>
-					<div class="form-group mb-2">
-						<input type="email" class="form-control" name="Email" placeholder="Your email address" required>
-					</div>
-					<div class="form-group mb-2">
-						<textarea class="form-control" rows="3" name="Message" placeholder="Your message" required></textarea>
-					</div>
-					<button type="submit" class="btn btn-primary mx-auto d-block" disabled>Send</button>
-				</form>
-				<p>This form is currently non-functional. Please use another method to contact me.</p>
+	<div id="portfolio" class="container">
+		<div id="projects" class="jumbotron">
+			<h2 class="text-center">Portfolio</h2>
+			<div class="row mb-2">
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://codepen.io/Adam111/full/WEwqZg" target="_blank">
+						<h4 class="project-title mb-1">Tribute Page to Nikola Tesla</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/tribute-page-to-nikola-tesla/tribute-page-to-nikola-tesla-screenshot-thumbnail.png" height="287" width="300" alt="Tribute Page to Nikola Tesla Screenshot">
+					</a>
+				</div>
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://codepen.io/Adam111/full/RqNWZb" target="_blank">
+						<h4 class="project-title mb-1">Survey Form</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/survey-form/survey-form-screenshot-thumbnail.png" height="139" width="300" alt="Survey Form Screenshot">
+					</a>
+				</div>
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://codepen.io/Adam111/full/dQoXVQ" target="_blank">
+						<h4 class="project-title mb-1">Product Landing Page</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/product-landing-page/product-landing-page-screenshot-thumbnail.png" height="228" width="300" alt="Product Landing Page Screenshot">
+					</a>
+				</div>
 			</div>
-			<div class="col">
-				<p><s>You can use the form on the left to send me a message. I try to reply as soon as possible.</s></p>
-				<p>You can also have a look at my profile on other sites.</p>
-				<a class="social-button" href="https://www.linkedin.com/in/adam-papp/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin fa-3x"></i></a>
-				<a class="social-button" href="https://github.com/Adam111" target="_blank" title="GitHub"><i class="fab fa-github fa-3x"></i></a>
-				<a id="profile-link" class="social-button" href="https://www.freecodecamp.org/adam111" target="_blank" title="freeCodeCamp"><i class="fab fa-free-code-camp fa-3x"></i></a>
+			<div class="row mb-2">
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://codepen.io/Adam111/full/zMKRLL" target="_blank">
+						<h4 class="project-title mb-1">Technical Documentation Page</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/technical-documentation-page/technical-documentation-page-screenshot-thumbnail.png" height="300" width="300" alt="Technical Documentation Page Screenshot">
+					</a>
+				</div>
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://codepen.io/Adam111/full/VzWYqL" target="_blank">
+						<h4 class="project-title mb-1">Random Quote Machine</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/random-quote-machine/random-quote-machine-screenshot-thumbnail.png" height="75" width="300" alt="Random Quote Machine Screenshot">
+					</a>
+				</div>
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://codepen.io/Adam111/full/gQzQMV" target="_blank">
+						<h4 class="project-title mb-1">Markdown Previewer</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/markdown-previewer/markdown-previewer-screenshot-thumbnail.png" height="300" width="300" alt="Markdown Previewer Screenshot">
+					</a>
+				</div>
+			</div>
+			<div class="row mb-2">
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://codepen.io/Adam111/full/KreVzQ" target="_blank">
+						<h4 class="project-title mb-1">Drum Machine</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/drum-machine/drum-machine-screenshot-thumbnail.png" height="286" width="300" alt="Drum Machine Screenshot">
+					</a>
+				</div>
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://codepen.io/Adam111/full/xQzgbP" target="_blank">
+						<h4 class="project-title mb-1">Calculator</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/calculator/calculator-screenshot-thumbnail.png" height="300" width="214" alt="Calculator Screenshot">
+					</a>
+				</div>
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://codepen.io/Adam111/full/gQjgKN" target="_blank">
+						<h4 class="project-title mb-1">Pomodoro Clock</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/pomodoro-clock/pomodoro-clock-screenshot-thumbnail.png" height="226" width="300" alt="Pomodoro Clock Screenshot">
+					</a>
+				</div>
+			</div>
+			<div class="row mb-2">
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://codepen.io/Adam111/full/mQQxYL" target="_blank">
+						<h4 class="project-title mb-1">Bar Chart</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/bar-chart/bar-chart-screenshot-thumbnail.png" height="193" width="300" alt="Bar Chart Screenshot">
+					</a>
+				</div>
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://codepen.io/Adam111/full/GwPPvB" target="_blank">
+						<h4 class="project-title mb-1">Scatterplot Graph</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/scatterplot-graph/scatterplot-graph-screenshot-thumbnail.png" height="203" width="300" alt="Scatterplot Graph Screenshot">
+					</a>
+				</div>
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://codepen.io/Adam111/full/YRBQdp" target="_blank">
+						<h4 class="project-title mb-1">Heat Map</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/heat-map/heat-map-screenshot-thumbnail.png" height="187" width="300" alt="Heat Map Screenshot">
+					</a>
+				</div>
+			</div>
+			<div class="row mb-2">
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://codepen.io/Adam111/full/GwzVwB" target="_blank">
+						<h4 class="project-title mb-1">Choropleth Map</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/choropleth-map/choropleth-map-screenshot-thumbnail.png" height="213" width="300" alt="Choropleth Map Screenshot">
+					</a>
+				</div>
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://codepen.io/Adam111/full/KrErJo" target="_blank">
+						<h4 class="project-title mb-1">Treemap Diagram</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/treemap-diagram/treemap-diagram-screenshot-thumbnail.png" height="300" width="286" alt="Treemap Diagram Screenshot">
+					</a>
+				</div>
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://fallacious-passenger.glitch.me" target="_blank">
+						<h4 class="project-title mb-1">Timestamp Microservice</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/timestamp/timestamp-screenshot-thumbnail.png" height="203" width="300" alt="Timestamp Microservice Screenshot">
+					</a>
+				</div>
+			</div>
+			<div class="row mb-2">
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://accidental-okra.glitch.me" target="_blank">
+						<h4 class="project-title mb-1">Request Header Parser Microservice</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/request-header-parser/request-header-parser-screenshot-thumbnail.png" height="122" width="300" alt="Request Header Parser Microservice Screenshot">
+					</a>
+				</div>
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://pollen-nation.glitch.me" target="_blank">
+						<h4 class="project-title mb-1">URL Shortener Microservice</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/url-shortener/url-shortener-screenshot-thumbnail.png" height="169" width="300" alt="URL Shortener Microservice Screenshot">
+					</a>
+				</div>
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://lackadaisical-cousin.glitch.me" target="_blank">
+						<h4 class="project-title mb-1">Exercise Tracker</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/exercise-tracker/exercise-tracker-screenshot-thumbnail.png" height="181" width="300" alt="Exercise Tracker Screenshot">
+					</a>
+				</div>
+			</div>
+			<div class="row mb-2">
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://quixotic-custard.glitch.me" target="_blank">
+						<h4 class="project-title mb-1">File Metadata Microservice</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/file-metadata/file-metadata-screenshot-thumbnail.png" height="144" width="300" alt="File Metadata Microservice Screenshot">
+					</a>
+				</div>
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://wide-closet.glitch.me" target="_blank">
+						<h4 class="project-title mb-1">Metric-Imperial Converter</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/metric-imperial-converter/metric-imperial-converter-screenshot-thumbnail.png" height="260" width="300" alt="Metric-Imperial Converter Screenshot">
+					</a>
+				</div>
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://imported-damselfly.glitch.me" target="_blank">
+						<h4 class="project-title mb-1">Issue Tracker</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/issue-tracker/issue-tracker-screenshot-thumbnail.png" height="300" width="233" alt="Issue Tracker Screenshot">
+					</a>
+				</div>
+			</div>
+			<div class="row mb-2">
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://giant-ink.glitch.me" target="_blank">
+						<h4 class="project-title mb-1">Personal Library</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/library/library-screenshot-thumbnail.png" height="300" width="293" alt="Personal Library Screenshot">
+					</a>
+				</div>
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://illustrious-snowman.glitch.me" target="_blank">
+						<h4 class="project-title mb-1">Stock Price Checker</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/stock-checker/stock-checker-screenshot-thumbnail.png" height="254" width="300" alt="Stock Price Checker Screenshot">
+					</a>
+				</div>
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://sugar-peripheral.glitch.me" target="_blank">
+						<h4 class="project-title mb-1">Anonymous Message Board</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/message-board/message-board-screenshot-thumbnail.png" height="300" width="185" alt="Anonymous Message Board Screenshot">
+					</a>
+				</div>
+			</div>
+			<div class="row mb-2">
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://codepen.io/Adam111/full/EvvVrX" target="_blank">
+						<h4 class="project-title mb-1">Local Weather</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/local-weather/local-weather-screenshot-thumbnail.png" height="75" width="300" alt="Local Weather Screenshot">
+					</a>
+				</div>
+				<div class="col-4 project-tile">
+					<a class="text-center" href="https://codepen.io/Adam111/full/rzJjgb" target="_blank">
+						<h4 class="project-title mb-1">Wikipedia Viewer</h4>
+						<img class="mx-auto d-block" src="https://adam111.github.io/assets/images/wikipedia-viewer/wikipedia-viewer-screenshot-thumbnail.png" height="64" width="300" alt="Wikipedia Viewer Screenshot">
+					</a>
+				</div>
+				<div class="col-4 project-tile">
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-<footer class="footer mt-auto py-3 bg-light">
-	<div class="container text-center">
-		<span class="text-muted">Made by Adam</span>
+	<div id="contact" class="container">
+		<div class="jumbotron">
+			<h2 class="text-center">Contact</h2>
+			<div class="row">
+				<div class="col">
+					<form action="#" method="post">
+						<div class="form-group mb-2">
+							<input type="text" class="form-control" name="Name" placeholder="Your name" required>
+						</div>
+						<div class="form-group mb-2">
+							<input type="email" class="form-control" name="Email" placeholder="Your email address" required>
+						</div>
+						<div class="form-group mb-2">
+							<textarea class="form-control" rows="3" name="Message" placeholder="Your message" required></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary mx-auto d-block" disabled>Send</button>
+					</form>
+					<p>This form is currently non-functional. Please use another method to contact me.</p>
+				</div>
+				<div class="col">
+					<p><s>You can use the form on the left to send me a message. I try to reply as soon as possible.</s></p>
+					<p>You can also have a look at my profile on other sites.</p>
+					<a class="social-button" href="https://www.linkedin.com/in/adam-papp/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin fa-3x"></i></a>
+					<a class="social-button" href="https://github.com/Adam111" target="_blank" title="GitHub"><i class="fab fa-github fa-3x"></i></a>
+					<a id="profile-link" class="social-button" href="https://www.freecodecamp.org/adam111" target="_blank" title="freeCodeCamp"><i class="fab fa-free-code-camp fa-3x"></i></a>
+				</div>
+			</div>
+		</div>
 	</div>
-</footer>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js'></script>
-<script src='https://use.fontawesome.com/releases/v5.6.3/js/all.js'></script>
 
-  
-
-    <script  src="js/index.js"></script>
-
-
-
-
+	<footer class="footer mt-auto py-3 bg-light">
+		<div class="container text-center">
+			<span class="text-muted">Made by Adam</span>
+		</div>
+	</footer>
 </body>
-
 </html>
