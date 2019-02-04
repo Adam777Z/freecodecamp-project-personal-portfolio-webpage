@@ -10,6 +10,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 	<script src="js/index.js"></script>
 	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
@@ -232,22 +233,32 @@
 			<h2 class="text-center">Contact</h2>
 			<div class="row">
 				<div class="col">
-					<form action="#" method="post">
+					<form id="contact-form" action="https://usebasin.com/f/f8a55f3aacfc" method="post" accept-charset="UTF-8">
 						<div class="form-group mb-2">
-							<input type="text" class="form-control" name="Name" placeholder="Your name" required>
+							<input id="name" class="form-control" type="text" name="Name" placeholder="Your name" required>
 						</div>
 						<div class="form-group mb-2">
-							<input type="email" class="form-control" name="Email" placeholder="Your email address" required>
+							<input id="email" class="form-control" type="email" name="Email" placeholder="Your email address" required>
 						</div>
 						<div class="form-group mb-2">
-							<textarea class="form-control" rows="3" name="Message" placeholder="Your message" required></textarea>
+							<textarea id="message" class="form-control" rows="3" name="Message" placeholder="Your message" required></textarea>
 						</div>
-						<button type="submit" class="btn btn-primary mx-auto d-block" disabled>Send</button>
+						<div class="form-group mb-2">
+							<span>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" title="Privacy Policy">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" title="Terms of Service">Terms of Service</a> apply.</span>
+							<div id="recaptcha" class="g-recaptcha"></div>
+						</div>
+						<input type="hidden" name="Source" value="CodePen">
+						<button id="submit-button" class="btn btn-primary mx-auto d-block" type="submit">Send</button>
 					</form>
-					<p>This form is currently non-functional. Please use another method to contact me.</p>
+					<div id="spinner" class="text-center mt-2" style="display: none;">
+						<div class="spinner-border text-primary" role="status">
+							<span class="sr-only">Loading...</span>
+						</div>
+					</div>
+					<div id="contact-form-result"></div>
 				</div>
 				<div class="col">
-					<p><s>You can use the form on the left to send me a message. I try to reply as soon as possible.</s></p>
+					<p>You can use the form on the left to send me a message. I try to reply as soon as possible.</p>
 					<p>You can also have a look at my profile on other sites.</p>
 					<a class="social-button" href="https://www.linkedin.com/in/adam-papp/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin fa-3x"></i></a>
 					<a class="social-button" href="https://github.com/Adam111" target="_blank" title="GitHub"><i class="fab fa-github fa-3x"></i></a>

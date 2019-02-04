@@ -23,3 +23,7 @@
 		margin: 3px;
 	}
 }
+
+.grecaptcha-badge {
+	display: none;
+}

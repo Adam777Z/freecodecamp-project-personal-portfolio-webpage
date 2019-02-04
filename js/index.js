@@ -14,4 +14,49 @@ $(document).ready(function() {
 	// 		scrollTop: $($(this).attr('href')).offset().top
 	// 	}, 200, 'linear');
 	// });
+
+	$('#contact-form').submit(function(event) {
+		event.preventDefault();
+		grecaptcha.reset();
+		grecaptcha.execute();
+	});
 });
+
+function onloadCallback() {
+	grecaptcha.render('recaptcha', {
+		'sitekey': '6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy',
+		'callback': onSubmit,
+		'size': 'invisible'
+	});
+}
+
+function onSubmit(token) {
+	$('#submit-button').attr('disabled', 'disabled');
+	$('#contact-form-result .alert').alert('close');
+	$('#spinner').show();
+
+	$.ajax({
+			url: 'https://usebasin.com/f/f8a55f3aacfc.json',
+			method: 'POST',
+			data: {
+				'Name': $('#name').val(),
+				'Email': $('#email').val(),
+				'Message': $('#message').val(),
+				'Source': 'CodePen',
+				'g-recaptcha-response': token
+			},
+			dataType: 'json'
+		})
+		.done(function() {
+			$('#spinner').hide();
+			$('#submit-button').removeAttr('disabled');
+			$('#contact-form-result').html('<div class="alert alert-success alert-dismissible fade show mt-2 mb-0" role="alert"><span>Email sent successfully.</span><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
+			// $('#name, #email, #message').val('');
+			$('#contact-form').trigger('reset');
+		})
+		.fail(function() {
+			$('#spinner').hide();
+			$('#submit-button').removeAttr('disabled');
+			$('#contact-form-result').html('<div class="alert alert-danger alert-dismissible fade show mt-2 mb-0" role="alert"><span>Error. Please try again.</span><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
+		});
+}
