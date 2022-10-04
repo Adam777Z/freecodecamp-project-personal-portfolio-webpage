@@ -1,1 +1,1 @@
-### **freeCodeCamp** - Responsive Web Design Project: Adam's Personal Portfolio Webpage
+### **freeCodeCamp** - Responsive Web Design Project: Adam's Portfolio web page
