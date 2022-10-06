@@ -15,6 +15,7 @@
 }
 
 .social-button {
+	font-size: 3rem;
 	margin: 5px;
 }
 
@@ -22,6 +23,15 @@
 	.social-button {
 		margin: 3px;
 	}
+}
+
+.social-button,
+.social-button .bi {
+	display: inline-flex;
+}
+
+a.social-button:hover {
+	text-decoration: none;
 }
 
 .grecaptcha-badge {
