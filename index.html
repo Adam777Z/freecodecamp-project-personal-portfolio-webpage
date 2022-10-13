@@ -20,13 +20,13 @@
 	<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
 		<div class="container">
 			<a class="navbar-brand" href="#">Adam's Portfolio web page</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="nav nav-pills">
 					<li class="nav-item">
-						<a class="nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#about">About Me</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#portfolio">Portfolio</a>
@@ -40,7 +40,7 @@
 	</nav>
 
 	<div id="about" class="container">
-		<div id="welcome-section" class="jumbotron">
+		<div id="welcome-section" class="p-4 my-4 bg-light rounded-3">
 			<div class="text-middle">
 				<h1 class="text-title text-center">About Me</h1>
 				<p>Experienced Web Developer with a demonstrated history of working in the information technology and services industry. Skilled in PHP, CodeIgniter, HTML, CSS, JavaScript, jQuery, and WordPress.</p>
@@ -49,7 +49,7 @@
 	</div>
 
 	<div id="portfolio" class="container">
-		<div id="projects" class="jumbotron">
+		<div id="projects" class="p-4 my-4 bg-light rounded-3">
 			<h2 class="text-center">Portfolio</h2>
 			<div class="row mb-2">
 				<div class="col project-tile">
@@ -231,21 +231,15 @@
 	</div>
 
 	<div id="contact" class="container">
-		<div class="jumbotron">
+		<div class="p-4 my-4 bg-light rounded-3">
 			<h2 class="text-center">Contact</h2>
 			<div class="row">
 				<div class="col">
 					<form id="contact-form" action="https://usebasin.com/f/f8a55f3aacfc" method="post" accept-charset="UTF-8">
-						<div class="form-group mb-2">
-							<input id="name" class="form-control" type="text" name="Name" placeholder="Your name" required>
-						</div>
-						<div class="form-group mb-2">
-							<input id="email" class="form-control" type="email" name="Email" placeholder="Your email address" required>
-						</div>
-						<div class="form-group mb-2">
-							<textarea id="message" class="form-control" rows="3" name="Message" placeholder="Your message" required></textarea>
-						</div>
-						<div class="form-group mb-2">
+						<input id="name" class="form-control mb-2" type="text" name="Name" placeholder="Your name" required>
+						<input id="email" class="form-control mb-2" type="email" name="Email" placeholder="Your email address" required>
+						<textarea id="message" class="form-control mb-2" rows="3" name="Message" placeholder="Your message" required></textarea>
+						<div class="mb-2">
 							<span>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" title="Privacy Policy">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" title="Terms of Service">Terms of Service</a> apply.</span>
 							<div id="recaptcha" class="g-recaptcha"></div>
 						</div>
