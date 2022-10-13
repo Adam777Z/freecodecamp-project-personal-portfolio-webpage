@@ -1,22 +1,32 @@
 const projectName = 'portfolio';
 localStorage.setItem('example_project', 'Personal Portfolio');
 
-$(document).ready(function() {
-	$('body').scrollspy({
+var submit_button;
+
+document.addEventListener('DOMContentLoaded', (event) => {
+	submit_button = document.querySelector('#submit-button');
+
+	const ScrollSpy = new bootstrap.ScrollSpy(document.body, {
 		target: '#navbar'
 	});
 
 	// Smooth Scroll to ID (disabled for the test to pass)
-	// $('a[href*="#"]').on('click', function(e) {
-	// 	e.preventDefault();
+	// document.querySelectorAll('a[href*="#"]').forEach((e) => {
+	// 	e.addEventListener('click', (event2) => {
+	// 		event2.preventDefault();
 
-	// 	$('html, body').animate({
-	// 		scrollTop: $($(this).attr('href')).offset().top
-	// 	}, 200, 'linear');
+	// 		// document.querySelector(event2.target.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+
+	// 		window.scroll({
+	// 			top: document.querySelector(event2.target.getAttribute('href')).offsetTop - 60,
+	// 			left: 0,
+	// 			behavior: 'smooth'
+	// 		});
+	// 	});
 	// });
 
-	$('#contact-form').submit(function(event) {
-		event.preventDefault();
+	document.querySelector('#contact-form').addEventListener('submit', (event2) => {
+		event2.preventDefault();
 		grecaptcha.reset();
 		grecaptcha.execute();
 	});
@@ -31,29 +41,47 @@ function onloadCallback() {
 }
 
 function onSubmit(token) {
-	$('#submit-button').attr('disabled', 'disabled').html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> <span>Sending...</span>');
-	$('#contact-form-result .alert').alert('close');
+	submit_button.disabled = true;
+	submit_button.innerHTML = '<span class="spinner-border spinner-border-sm" role="status"><span class="visually-hidden">Loading...</span></span> <span>Sending...</span>';
 
-	$.ajax({
-		url: 'https://usebasin.com/f/f8a55f3aacfc.json',
-		method: 'POST',
-		data: {
-			'Name': $('#name').val(),
-			'Email': $('#email').val(),
-			'Message': $('#message').val(),
-			'Source': 'CodePen',
-			'g-recaptcha-response': token
+	let contact_form_result_alert = document.querySelector('#contact-form-result .alert');
+
+	if (contact_form_result_alert) {
+		new bootstrap.Alert(contact_form_result_alert);
+		bootstrap.Alert.getInstance(contact_form_result_alert).close();
+	}
+
+	fetch('https://usebasin.com/f/f8a55f3aacfc.json', {
+		'method': 'POST',
+		'headers': {
+			'Content-Type': 'application/json'
 		},
-		dataType: 'json'
+		'body': JSON.stringify({
+			'Name': document.querySelector('#name').value,
+			'Email': document.querySelector('#email').value,
+			'Message': document.querySelector('#message').value,
+			'Source': 'Portfolio',
+			'g-recaptcha-response': token
+		}),
+		'cache': 'no-store'
 	})
-	.done(function() {
-		$('#submit-button').removeAttr('disabled').html('Send');
-		$('#contact-form-result').html('<div class="alert alert-success alert-dismissible fade show mt-2 mb-0" role="alert"><span>Email sent successfully.</span><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
-		// $('#name, #email, #message').val('');
-		$('#contact-form').trigger('reset');
+	.then((response) => {
+		if (response['ok']) {
+			return response.json();
+		} else {
+			throw 'Error';
+		}
 	})
-	.fail(function() {
-		$('#submit-button').removeAttr('disabled').html('Send');
-		$('#contact-form-result').html('<div class="alert alert-danger alert-dismissible fade show mt-2 mb-0" role="alert"><span>Error. Please try again.</span><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>');
+	.then((data) => {
+		document.querySelector('#contact-form-result').innerHTML = '<div class="alert alert-success alert-dismissible fade show mt-2 mb-0" role="alert"><span>Email sent successfully.</span><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
+		// document.querySelectorAll('#name, #email, #message').forEach(e => e.value = '');
+		document.querySelector('#contact-form').reset();
+	})
+	.catch((error) => {
+		document.querySelector('#contact-form-result').innerHTML = '<div class="alert alert-danger alert-dismissible fade show mt-2 mb-0" role="alert"><span>Error. Please try again.</span><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
+	})
+	.finally(() => {
+		submit_button.disabled = false;
+		submit_button.textContent = 'Send';
 	});
 }
